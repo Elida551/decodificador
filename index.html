@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <header class="cabecalho">
+    <img class="cabecalho__logo" src="/assets/logo.alura.png" alt="logo alura">
+  </header> 
+     
+  <main class="conteudo">
+    <section class="conteudo_primeira_secao" >
+      <textarea onclick="ocultarExibir()"  class="conteudo_textarea" placeholder="Digite texto aqui"></textarea>
+    <div class="conteudo_texto"> 
+       
+        <h6>Apenas letras minuscúlas e sem acentos<h6>
+      </div>
+      <div class="botoes_primeira_secao">
+        <button onclick="btnCriptografar()" class="botao_criptografar">Criptografar</button>
+        <button onclick="btnDesencriptografar()"  class="botao_descriptografar">Descriptografar</button>
+     </div> 
+    </section>
+
+    <section class="conteudo_segunda_secao">
+    <textarea class="textearea_segunda_secao"></textarea>
+    <div class="segunda_secao_elementos">
+      <img class="conteudo_img" src="/assets/menino-alura.png" alt="menino"> 
+      <div class="segunda_secao_paragrafos">
+  
+        <p class="paragrafo_primeiro" > Nehuma mensagem encotrada</p>
+        <p class="paragrafo_segundo"> Digite um texto que você deseja Criptografar ou descriptografar.</p> 
+      </div>
+      <div class="botao_copiar_texto"  >
+        <button class="botao_copiar" onclick="copiarTexto()">Copiar</button> 
+      </div>   
+    </div>    
+   </section>   
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer > 
+    <p class="rodape">Desenvolvido por Élida Silva</p>
+   </footer
+    
+ </body>
+ </html>
